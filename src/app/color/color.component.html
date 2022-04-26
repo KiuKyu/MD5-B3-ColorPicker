@@ -1,0 +1,11 @@
+<label>
+  Chọn 1 màu trong danh sách
+</label>
+<select (change)="getColor()" id="choice-color">
+  <option *ngFor="let color of colors" [value]="color.choice">
+    {{color.color}}
+  </option>
+</select>
+<div>
+  <p>{{selectColor.color}}</p>
+</div>
